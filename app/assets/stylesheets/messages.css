@@ -1,0 +1,155 @@
+.wrapper{
+  display: flex;
+}
+/***********************************************************
+サイドバー
+***********************************************************/
+.side_bar{
+  width: 300px;
+  height: 100vh;
+  background-color: #253141;
+  
+}
+/* サイドバーヘッダー */
+.side_bar_header{
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_name{
+  line-height: 100px;
+}
+.link_text{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.create_chat{
+  border: 1px solid skyblue;
+  padding: 14px;
+}
+.create_chat_text{
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+/* チャット一覧 */
+.rooms{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 0 20px;
+  overflow: scroll;
+}
+.room{
+  padding: 20px 20px 40px;
+}
+.room_name{
+  color: white;
+  text-decoration: none;
+  
+}
+/***********************************************************
+チャット画面
+***********************************************************/
+.main_chat{
+  width: calc(100vw - 300px);
+  height: 100vh;
+  background-color: #ffffff;
+  
+}
+.main_chat_header{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.chat_name{
+  margin-top: 36px;
+}
+.chat_name_text{
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+.destroy_chat{
+  margin-top: 40px;
+}
+.destroy_chat_text{
+  color: darkred;
+  border: 1px solid darkred;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* チャット画面 */
+.messages{
+  background-color: #fafafa;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+.name_date{
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0 0 0;
+}
+.message_name{
+  font-size: 16px;
+  color: #434a54;
+  margin-right: 10px;
+  
+}
+.message_date{
+  font-size: 12px;
+  color: #999;
+}
+.message_content{
+  font-size: 14px;
+  color: #434a54;
+  margin-bottom: 40px;
+}
+
+/* チャット投稿 */
+.form{
+  background-color: #dddddd;
+  height: 90px;
+  padding: 20px 40px;
+  display: flex;
+}
+.form_input, .form_submit{
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+.form_input_btn{
+  border: none;
+  height: 50px;
+  padding-left: 10px;
+  width: 100%;
+}
+.form_submit{
+  border: none;
+  background-color: #38aef0;
+  color: white;
+  height: 50px;
+  font-size: 16px;
+  padding: 0 20px;
+  margin-left: 15px;
+  width: 80px;
+}
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
