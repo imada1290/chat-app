@@ -1,6 +1,6 @@
 <div class="side_bar_header">
   <div class="user_name">
-    <%= link_to "Tom", "#", class: "link_text"%>
+    <%= link_to current_user.name, edit_user_path(current_user), class: "link_text"%>
   </div>
 
   <div class="create_chat">
