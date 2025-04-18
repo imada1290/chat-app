@@ -1,6 +1,8 @@
 <div class="main_chat_header">
   <div class="chat_name">
-    <%= link_to "hoge", "#", class: "chat_name_text" %>
+    <div class="chat_name_text">
+      <%= @room.name %>
+    </div>
   </div>
   <div class="destroy_chat">
     <%= link_to "チャットを終了する", "#", class: "destroy_chat_text" %>
