@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="destroy_chat">
-    <%= link_to "チャットを終了する", "#", class: "destroy_chat_text" %>
+    <%= link_to "チャットを終了する", room_path(@room), data: {turbo_method: :delete}, class: "destroy_chat_text" %>
   </div>
 </div>
 
